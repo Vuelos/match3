@@ -9,7 +9,7 @@ public partial class MainMenu : Node2D
     public override void _Ready()
     {
         _btnPlay = GetNode<Button>("CanvasLayer/BtnPlay");
-        _btnPlay.Connect("pressed", Callable.From(this.OnPlayPressed));
+        _btnPlay.Connect("pressed", Callable.From(OnPlayPressed));
     }
 
     private void OnPlayPressed()
